@@ -300,9 +300,12 @@
       </div>
     </section>
 
+    <!-- Contact Area -->
     <section class="contact">
-      <p class="contact-subtitle">i am available</p>
-      <h2 class="contact-title"><span>contact me</span>today</h2>
+      <div class="contact-heading">
+        <p class="contact-subtitle">i am available</p>
+        <h2 class="contact-title"><span>contact me</span> today</h2>
+      </div>
       <div class="contact-icons">
         <div class="contact-card">
           <img class="contact-img" src="./img/phone-solid.png" alt="a phone" />
@@ -330,12 +333,12 @@
       </div>
 
       <p class="contact-form-subtitle">schedule a free</p>
-      <h2 class="contact-form-title"></h2>
+      <h2 class="contact-form-title">Home Consultation</h2>
       <form class="contact-form" action="#">
         <input class="contact-input" type="text" placeholder="NAME" />
         <input class="contact-input" type="email" placeholder="EMAIL" />
         <input class="contact-input" type="text" placeholder="PHONE" />
-        <input class="contact-input" type="text" placeholder="NAME" />
+
         <textarea
           class="contact-textarea"
           name="message"
@@ -346,40 +349,39 @@
       </form>
     </section>
 
+    <!-- Footer -->
+    <div class="footer-img-container">
+      <img class="footer-img" src="./img/homes4.png" alt="a house" />
+      <img class="footer-img" src="./img/homes5.png" alt="a house" />
+      <img class="footer-img" src="./img/homes2.png" alt="a house" />
+      <img class="footer-img" src="./img/homes3.png" alt="a house" />
+      <img class="footer-img" src="./img/homes1.png" alt="a house" />
+    </div>
     <footer class="footer">
-      <div class="footer-img-container">
-        <img class="footer-img" src="./img/homes4.png" alt="a house" />
-        <img class="footer-img" src="./img/homes5.png" alt="a house" />
-        <img class="footer-img" src="./img/homes2.png" alt="a house" />
-        <img class="footer-img" src="./img/homes3.png" alt="a house" />
-        <img class="footer-img" src="./img/homes1.png" alt="a house" />
-      </div>
-
       <div class="footer-social">
-        <h1 class="footer-social-title">
-          <div class="footer-social-links">
-            <img
-              class="footer-social-link"
-              src="./img/facebook-square-brands.png"
-              alt="facebook image"
-            />
-            <img
-              class="footer-social-link"
-              src="./img/instagram-brands.png"
-              alt="facebook image"
-            />
-            <img
-              class="footer-social-link"
-              src="./img/youtube-brands.png"
-              alt="facebook image"
-            />
-            <img
-              class="footer-social-link"
-              src="./img/linkedin-in-brands.png"
-              alt="facebook image"
-            />
-          </div>
-        </h1>
+        <h1 class="footer-social-title"><span>Alden</span> Casas</h1>
+        <div class="footer-social-links">
+          <img
+            class="footer-social-link"
+            src="./img/facebook-square-brands.png"
+            alt="facebook image"
+          />
+          <img
+            class="footer-social-link"
+            src="./img/instagram-brands.png"
+            alt="facebook image"
+          />
+          <img
+            class="footer-social-link"
+            src="./img/youtube-brands.png"
+            alt="facebook image"
+          />
+          <img
+            class="footer-social-link"
+            src="./img/linkedin-in-brands.png"
+            alt="facebook image"
+          />
+        </div>
       </div>
       <div class="footer-nav">
         <ul class="footer-nav-links">
@@ -402,12 +404,16 @@
         <h3 class="footer-location-title">Realty Office</h3>
 
         <p class="footer-location-address">123 Street city, state 89077</p>
-        <a class="footer-location-link" href="#">get directions</a>
+        <div id="map"></div>
         <!-- Map image -->
       </div>
       <p class="footer-copywright">&#169; No Rights Reserved - Project Brief</p>
     </footer>
 
     <script src="js/logic.js"></script>
+    <script
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-2unMtergTyqF5YXxbNmr20dijqhmlnM&callback=initMap"
+    ></script>
   </body>
 </html>

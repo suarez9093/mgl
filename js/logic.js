@@ -8,3 +8,15 @@ openBtn.addEventListener("click", (e) => {
 closeBtn.addEventListener("click", (e) => {
   navigation.classList.remove("navigation-open");
 });
+
+function initMap() {
+  // The location of Uluru
+  var uluru = { lat: -15.87, lng: 100.9925 };
+  // The map, centered at Uluru
+  var map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: uluru,
+  });
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({ position: uluru, map: map });
+}
