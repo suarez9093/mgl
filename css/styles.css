@@ -31,7 +31,9 @@ img {
 .btn-primary:focus {
 }
 .nav-brand span,
-.title span {
+.title span,
+.ft-section-title span,
+.ft-section-card-title {
   font-weight: 700;
 }
 /* 
@@ -175,4 +177,66 @@ Hero
 
 .hero-container > * {
   margin: 0.5em;
+}
+
+/* 
+Featured Section
+==========================================
+*/
+.ft-section-headline {
+  text-align: center;
+  margin: 1em 0;
+}
+.ft-section-subtitle {
+  color: grey;
+  font-weight: 300;
+}
+.ft-section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin-top: 10px;
+  background: #142c4c;
+}
+.ft-section-title::after {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Cards */
+.ft-section-cards {
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1em;
+}
+
+.ft-section-card {
+  text-align: center;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.25);
+  padding: 1em;
+  background: white;
+}
+
+.ft-section-card-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ft-section-card-icon {
+  margin: 1em;
+}
+.ft-section-card-feature {
+  display: flex;
+}
+.ft-section-card-link {
+  text-decoration: underline;
+  color: #142c4c;
+}
+.ft-section-card-link:hover {
+  color: blue;
+}
+.ft-section-card-link:focus {
+  color: blue;
 }
