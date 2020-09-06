@@ -2,15 +2,38 @@
 Global Styles
 ==========================================
 */
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-family: "Roboto", sans-serif;
   line-height: 1.16;
   text-transform: uppercase;
 }
 
+img {
+  max-width: 100%;
+}
+
+.btn {
+  color: white;
+  border: 1px solid white;
+  padding: 0.55em 1.35em;
+  font-weight: 300;
+}
+.btn-primary:hover {
+  color: yellow;
+  border: 1px solid yellow;
+}
+.btn-primary:focus {
+}
+.nav-brand span,
+.title span {
+  font-weight: 700;
+}
 /* 
 Typography
 ==========================================
@@ -18,6 +41,7 @@ Typography
 h1,
 h2,
 h3 {
+  font-weight: 300;
   margin: 0;
 }
 
@@ -27,18 +51,36 @@ a {
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-weight: 300;
 }
 
 /* 
 Layout
 ==========================================
 */
+.main-grid {
+  display: grid;
+  grid-template-columns: minmax(1em 1fr) minmax(0px, 500px) minmax(1em, 1fr);
+  grid-column-gap: 2em;
+}
 
-.container {
-  border: 1px solid red;
-  width: 90%;
-  max-width: 900px;
-  margin: 0 auto;
+/* 
+Header 
+==========================================
+*/
+.header {
+  color: white;
+  position: absolute;
+  width: 100%;
+}
+.header-container {
+  display: flex;
+  padding: 1em;
 }
 
 /* 
@@ -46,18 +88,81 @@ Navigation
 ==========================================
 */
 .navigation {
-  background: transparent;
-  position: absolute;
+  position: fixed;
+  background: #000;
   width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 100%;
+  transform: translateX(0);
+  transition: transform 250ms;
+}
+.navigation-open {
+  transform: translateX(-100%);
+}
+.open-nav {
+  align-self: start;
+  line-height: 0;
+  border: 0;
+  background: 0;
+  color: white;
+  cursor: pointer;
+  padding: 0.5em;
+  margin-left: auto;
+  font-size: 1.5em;
+}
+.close-nav {
+  border: 0;
+  background: 0;
+  color: #ffe600;
+  font-weight: 700;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 0.5em;
+  position: absolute;
+}
+.navigation > * {
+  color: white;
+  margin: 1em;
+}
+.nav-brand {
+  align-self: flex-start;
+}
+
+.nav-links {
+}
+.nav-item {
+  margin: 0.25em;
+}
+.nav-link {
+  color: white;
+}
+.nav-link:hover {
+  color: yellow;
+}
+.nav-link:focus {
+  color: yellow;
 }
 /* 
 Hero
 ==========================================
 */
 .hero {
-  background-image: url("https://images.unsplash.com/photo-1556955112-28cde3817b0a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80");
+  background-image: url("../img/intro-bg.png");
   background-size: cover;
-  background-position: top;
-  padding: 8em 0 4em;
+  background-position: top center;
+  padding: 5em 0;
   color: #fff;
+}
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.hero-container > * {
+  margin: 0.5em;
 }
