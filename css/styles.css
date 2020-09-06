@@ -68,7 +68,9 @@ Layout
   grid-template-columns: minmax(1em 1fr) minmax(0px, 500px) minmax(1em, 1fr);
   grid-column-gap: 2em;
 }
-
+.nav-grid {
+  display: flex;
+}
 /* 
 Header 
 ==========================================
@@ -89,7 +91,7 @@ Navigation
 */
 .navigation {
   position: fixed;
-  background: #000;
+  background: #2d3842;
   width: 100%;
   top: 0;
   right: 0;
@@ -97,6 +99,10 @@ Navigation
   left: 100%;
   transform: translateX(0);
   transition: transform 250ms;
+}
+.nav-container {
+  display: flex;
+  justify-content: flex-end;
 }
 .navigation-open {
   transform: translateX(-100%);
@@ -115,28 +121,32 @@ Navigation
 .close-nav {
   border: 0;
   background: 0;
-  color: #ffe600;
+  color: white;
   font-weight: 700;
   font-size: 3rem;
   cursor: pointer;
   padding: 0.5em;
   position: absolute;
 }
-.navigation > * {
-  color: white;
-  margin: 1em;
-}
+
 .nav-brand {
   align-self: flex-start;
 }
 
 .nav-links {
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
 }
 .nav-item {
   margin: 0.25em;
 }
 .nav-link {
   color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 .nav-link:hover {
   color: yellow;
