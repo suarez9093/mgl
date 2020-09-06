@@ -1,0 +1,63 @@
+/* 
+Global Styles
+==========================================
+*/
+
+body {
+  margin: 0;
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.16;
+  text-transform: uppercase;
+}
+
+/* 
+Typography
+==========================================
+*/
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* 
+Layout
+==========================================
+*/
+
+.container {
+  border: 1px solid red;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* 
+Navigation 
+==========================================
+*/
+.navigation {
+  background: transparent;
+  position: absolute;
+  width: 100%;
+}
+/* 
+Hero
+==========================================
+*/
+.hero {
+  background-image: url("https://images.unsplash.com/photo-1556955112-28cde3817b0a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80");
+  background-size: cover;
+  background-position: top;
+  padding: 8em 0 4em;
+  color: #fff;
+}
