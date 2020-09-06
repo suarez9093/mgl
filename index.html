@@ -4,24 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>MGL</title>
   </head>
 
   <body>
-    
     <!-- Home Page -->
 
     <header class="header main-grid">
       <div class="header-container">
-      <h2 class="nav-brand"><span>Alden</span> Casas</h2>
-      <button aria-label="Open navigation" class="open-nav">&#9776;</button>
+        <h2 class="nav-brand"><span>Alden</span> Casas</h2>
+        <button aria-label="Open navigation" class="open-nav">&#9776;</button>
 
-      <nav class="navigation">
-        <div class="nav-container">
-
-          <button aria-label="Close navigation" class="close-nav">&times;</button>
-        </div>
+        <nav class="navigation">
+          <div class="nav-container">
+            <button aria-label="Close navigation" class="close-nav">
+              &times;
+            </button>
+          </div>
           <ul class="nav-links">
             <li class="nav-item">
               <a href="#" class="nav-link">About Alden</a>
@@ -33,31 +36,30 @@
               <a href="#" class="nav-link">Contact Me</a>
             </li>
           </ul>
-
-     
-      </nav>
-    </div>
+        </nav>
+      </div>
     </header>
- 
 
     <!-- Hero Section -->
     <main class="hero main-grid">
       <div class="hero-container">
         <p class="hero-subtitle">Greater Las Vegas Real Estate</p>
-        <h1 class="title">Find Your <br /> <span>dream home</span></h1>
+        <h1 class="title">
+          Find Your <br />
+          <span>dream home</span>
+        </h1>
         <a href="#" class="btn btn-primary">contact me</a>
       </div>
     </main>
 
-
     <!-- Feature Section -->
     <section class="ft-section main-grid">
       <div class="ft-section-headline">
-
-     
-      <p class="ft-section-subtitle">las vegas, henderson, summerlin + more</p>
-      <h2 class="ft-section-title"><span>Featered</span> homes for sale</h2>
-    </div>
+        <p class="ft-section-subtitle">
+          las vegas, henderson, summerlin + more
+        </p>
+        <h2 class="ft-section-title"><span>Featered</span> homes for sale</h2>
+      </div>
       <div class="ft-section-cards">
         <div class="ft-section-card">
           <img
@@ -70,7 +72,6 @@
           </p>
           <h3 class="ft-section-card-title">$800,150</h3>
           <div class="ft-section-card-icons">
-      
             <img
               src="./img/bed-solid.png"
               alt="small icon about the home"
@@ -97,6 +98,7 @@
             src="./img/ft-homes3.png"
             alt="featured home"
             class="ft-section-card-img"
+            style="width: 100%"
           />
           <p class="ft-section-card-subtitle">
             123 main st. las vegas, nv 89147
@@ -161,29 +163,36 @@
 
     <!-- About Section -->
     <section class="about">
-      <img
-        src="./img/agent.png"
-        alt="a man in a suit standing next to a wooden wall"
-        class="about-img"
-      />
-      <h2 class="about-title"><span>Alden</span> Casas</h2>
-      <p class="about-subtitle">licensed realtor&reg; (#0.547777777)</p>
-      <p class="about-description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel
-        metus sit amet velit interdum elementum. Morbi vitae lacinia justo.
-        Mauris vitae leo purus. Pellentesque cursus, ipsum dapibus auctor
-        dignissim, ligula lorem lobortis ex, id accumsan massa arcu id augue.
-        Duis vestibulum ipsum ante, nec ullamcorper nisi lacinia non. Ut a quam
-        metus. Donec et nunc in enim tincidunt blandit eget vel augue. Duis
-        sollicitudin magna et metus malesuada, ut dictum ipsum malesuada. Ut
-        libero sem, luctus pulvinar metus id, placerat efficitur lectus.
-      </p>
-      <a href="#" class="btn">contact me</a>
+      <div class="about-container">
+        <img
+          src="./img/agent.png"
+          alt="a man in a suit standing next to a wooden wall"
+          class="about-img"
+        />
+        <h2 class="about-title"><span>Alden</span> Casas</h2>
+        <p class="about-subtitle">licensed realtor&reg; (#0.547777777)</p>
+        <p class="about-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel
+          metus sit amet velit interdum elementum. Morbi vitae lacinia justo.
+          Mauris vitae leo purus. Pellentesque cursus, ipsum dapibus auctor
+          dignissim, ligula lorem lobortis ex, id accumsan massa arcu id augue.
+          Duis vestibulum ipsum ante, nec ullamcorper nisi lacinia non. Ut a
+          quam metus. Donec et nunc in enim tincidunt blandit eget vel augue.
+          Duis sollicitudin magna et metus malesuada, ut dictum ipsum malesuada.
+          Ut libero sem, luctus pulvinar metus id, placerat efficitur lectus.
+        </p>
+        <a href="#" class="btn">contact me</a>
+      </div>
     </section>
 
     <!-- Testimonials Section -->
+
     <section class="rec-section">
       <!-- carrosuel -->
+      <div class="rec-heading">
+        <p class="rec-subtitle">Client</p>
+        <h2 class="rec-title">Testimonials</h2>
+      </div>
       <div class="rec-cards">
         <div class="rec-card">
           <img
@@ -192,7 +201,7 @@
             alt="a family of four holding keys in front of a house"
           />
         </div>
-        <div>
+        <div class="rec-card">
           <h2 class="rec-card-title"><span>purchase</span> a home</h2>
           <p class="rec-card-description">
             Etiam id aliquet felis, ac dictum dolor. Aliquam mattis lobortis
@@ -205,105 +214,142 @@
             pharetra orci sit amet mauris laoreet lacinia. Donec vestibulum ante
             ac accumsan tincidunt.
           </p>
-          <a href="#" class="btn">get started</a>
+          <a href="#" class="btn btn-secondary">get started</a>
         </div>
-        <div>
+        <div class="rec-card">
           <img
             class="rec-card-img"
             src="./img/purchase.png"
             alt="a family of four holding keys in front of a house"
           />
         </div>
-        <div>
-            <div>
-                <h2 class="rec-card-title"><span>list</span> a home</h2>
-                <p class="rec-card-description">
-                    Aliquam erat volutpat. Nulla vulputate sit amet neque ut porttitor. Curabitur maximus, velit eget euismod eleifend, ante purus venenatis sem, in auctor nisi magna vitae metus. Morbi a nulla at dui lobortis varius. Curabitur tempor libero eget luctus varius. Vestibulum laoreet maximus ullamcorper. Phasellus ac ligula bibendum, accumsan elit vitae, iaculis leo. Sed lacinia venenatis interdum. Suspendisse porttitor fringilla mi, sed consequat leo dictum vitae. Praesent maximus, elit sit amet efficitur vehicula, est leo interdum nisl, eget sollicitudin risus lacus et tellus. Phasellus a sapien massa. Mauris bibendum ligula sed lorem placerat aliquam. Maecenas porttitor, dolor cursus euismod rhoncus, lectus metus viverra risus, at consectetur lectus ante vel metus.
-                </p>
-                <a href="#" class="btn">get a free home estimate</a>
-              </div>
+        <div class="rec-card">
+          <h2 class="rec-card-title"><span>list</span> a home</h2>
+          <p class="rec-card-description">
+            Aliquam erat volutpat. Nulla vulputate sit amet neque ut porttitor.
+            Curabitur maximus, velit eget euismod eleifend, ante purus venenatis
+            sem, in auctor nisi magna vitae metus. Morbi a nulla at dui lobortis
+            varius. Curabitur tempor libero eget luctus varius. Vestibulum
+            laoreet maximus ullamcorper. Phasellus ac ligula bibendum, accumsan
+            elit vitae, iaculis leo. Sed lacinia venenatis interdum. Suspendisse
+            porttitor fringilla mi, sed consequat leo dictum vitae. Praesent
+            maximus, elit sit amet efficitur vehicula, est leo interdum nisl,
+            eget sollicitudin risus lacus et tellus. Phasellus a sapien massa.
+            Mauris bibendum ligula sed lorem placerat aliquam. Maecenas
+            porttitor, dolor cursus euismod rhoncus, lectus metus viverra risus,
+            at consectetur lectus ante vel metus.
+          </p>
+          <a href="#" class="btn btn-secondary">get a free home estimate</a>
+        </div>
       </div>
     </section>
 
-
     <section class="contact">
-        <p class="contact-subtitle">i am available</p>
-        <h2 class="contact-title"><span>contact me</span>today</h2>
-        <div class="contact-icons">
-            <div class="contact-card">
-                <img class="contact-img" src="./img/phone-solid.png" alt="a phone">
-                <p class="contact-card-title">direct phone #</p>
-                <p class="contact-card-subtitle">702-123-4567</p>
-            </div>
-            <div class="contact-card">
-                <img class="contact-img" src="./img/envelope-regular.png" alt="an envelope">
-                <p class="contact-card-title">email me</p>
-                <p class="contact-card-subtitle">email@mail.com</p>
-            </div>
-            <div class="contact-card">
-                <img class="contact-img" src="./img/map-marker-alt-solid.png" alt="a map marker">
-                <p class="contact-card-title">office</p>
-                <p class="contact-card-subtitle">realty office</p>
-            </div>
+      <p class="contact-subtitle">i am available</p>
+      <h2 class="contact-title"><span>contact me</span>today</h2>
+      <div class="contact-icons">
+        <div class="contact-card">
+          <img class="contact-img" src="./img/phone-solid.png" alt="a phone" />
+          <p class="contact-card-title">direct phone #</p>
+          <p class="contact-card-subtitle">702-123-4567</p>
         </div>
+        <div class="contact-card">
+          <img
+            class="contact-img"
+            src="./img/envelope-regular.png"
+            alt="an envelope"
+          />
+          <p class="contact-card-title">email me</p>
+          <p class="contact-card-subtitle">email@mail.com</p>
+        </div>
+        <div class="contact-card">
+          <img
+            class="contact-img"
+            src="./img/map-marker-alt-solid.png"
+            alt="a map marker"
+          />
+          <p class="contact-card-title">office</p>
+          <p class="contact-card-subtitle">realty office</p>
+        </div>
+      </div>
 
-        <p class="contact-form-subtitle">schedule a free</p>
-        <h2 class="contact-form-title"></h2>
-        <form class="contact-form" action="#">
-            <input class="contact-input" type="text" placeholder="NAME">
-            <input class="contact-input" type="email" placeholder="EMAIL">
-            <input class="contact-input" type="text" placeholder="PHONE">
-            <input class="contact-input" type="text" placeholder="NAME">
-            <textarea class="contact-textarea" name="message" id="form-textarea" placeholder="MESSAGE"></textarea>
-            <button class="contact-form-btn">Submit</button>
-        </form>
+      <p class="contact-form-subtitle">schedule a free</p>
+      <h2 class="contact-form-title"></h2>
+      <form class="contact-form" action="#">
+        <input class="contact-input" type="text" placeholder="NAME" />
+        <input class="contact-input" type="email" placeholder="EMAIL" />
+        <input class="contact-input" type="text" placeholder="PHONE" />
+        <input class="contact-input" type="text" placeholder="NAME" />
+        <textarea
+          class="contact-textarea"
+          name="message"
+          id="form-textarea"
+          placeholder="MESSAGE"
+        ></textarea>
+        <button class="contact-form-btn">Submit</button>
+      </form>
     </section>
 
-
     <footer class="footer">
-        <div class="footer-img-container">
-            <img class="footer-img" src="./img/homes4.png" alt="a house">
-            <img class="footer-img" src="./img/homes5.png" alt="a house">
-            <img class="footer-img" src="./img/homes2.png" alt="a house">
-            <img class="footer-img" src="./img/homes3.png" alt="a house">
-            <img class="footer-img" src="./img/homes1.png" alt="a house">
-        </div>
+      <div class="footer-img-container">
+        <img class="footer-img" src="./img/homes4.png" alt="a house" />
+        <img class="footer-img" src="./img/homes5.png" alt="a house" />
+        <img class="footer-img" src="./img/homes2.png" alt="a house" />
+        <img class="footer-img" src="./img/homes3.png" alt="a house" />
+        <img class="footer-img" src="./img/homes1.png" alt="a house" />
+      </div>
 
-        <div class="footer-social">
-            <h1 class="footer-social-title">
-                <div class="footer-social-links">
-                    <img class="footer-social-link" src="./img/facebook-square-brands.png" alt="facebook image">
-                    <img class="footer-social-link" src="./img/instagram-brands.png" alt="facebook image">
-                    <img class="footer-social-link" src="./img/youtube-brands.png" alt="facebook image">
-                    <img class="footer-social-link" src="./img/linkedin-in-brands.png" alt="facebook image">
-                </div>
-            </h1>
-        </div>
-        <div class="footer-nav">
-            <ul class="footer-nav-links">
-                <li class="footer-nav-link">
-                    <a class="footer-nav" href="#">About Alden</a>
-                </li>
-                <li class="footer-nav-link">
-                    <a class="footer-nav" href="#">Search Homes</a>
-                </li>
-                <li class="footer-nav-link">
-                    <a class="footer-nav" href="#">Buy or Sell</a>
-                </li>
-                <li class="footer-nav-link">
-                    <a class="footer-nav" href="#">Contact Me</a>
-                </li>
-            </ul>
-        </div>
+      <div class="footer-social">
+        <h1 class="footer-social-title">
+          <div class="footer-social-links">
+            <img
+              class="footer-social-link"
+              src="./img/facebook-square-brands.png"
+              alt="facebook image"
+            />
+            <img
+              class="footer-social-link"
+              src="./img/instagram-brands.png"
+              alt="facebook image"
+            />
+            <img
+              class="footer-social-link"
+              src="./img/youtube-brands.png"
+              alt="facebook image"
+            />
+            <img
+              class="footer-social-link"
+              src="./img/linkedin-in-brands.png"
+              alt="facebook image"
+            />
+          </div>
+        </h1>
+      </div>
+      <div class="footer-nav">
+        <ul class="footer-nav-links">
+          <li class="footer-nav-link">
+            <a class="footer-nav" href="#">About Alden</a>
+          </li>
+          <li class="footer-nav-link">
+            <a class="footer-nav" href="#">Search Homes</a>
+          </li>
+          <li class="footer-nav-link">
+            <a class="footer-nav" href="#">Buy or Sell</a>
+          </li>
+          <li class="footer-nav-link">
+            <a class="footer-nav" href="#">Contact Me</a>
+          </li>
+        </ul>
+      </div>
 
-        <div class="footer-location">
-            <h3 class="footer-location-title">Realty Office</h3>
+      <div class="footer-location">
+        <h3 class="footer-location-title">Realty Office</h3>
 
-            <p class="footer-location-address">123 Street city, state 89077</p>
-            <a class="footer-location-link" href="#">get directions</a>
-            <!-- Map image -->
-        </div>
-        <p class="footer-copywright">&#169; No Rights Reserved - Project Brief</p>
+        <p class="footer-location-address">123 Street city, state 89077</p>
+        <a class="footer-location-link" href="#">get directions</a>
+        <!-- Map image -->
+      </div>
+      <p class="footer-copywright">&#169; No Rights Reserved - Project Brief</p>
     </footer>
 
     <script src="js/logic.js"></script>
