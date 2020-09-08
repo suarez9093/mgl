@@ -1,6 +1,38 @@
-Mogul Pro Media
+# Mogul Pro Media
 
-Job details
+ <h3 align="center">MGL</h3>
+ 
+![Project Name](gif/demo.gif)
+
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  
+  </a>
+  <p align="center">
+   
+    <a href="https://suarez9093.github.io/mgl/">View live Demo</a>
+  </p>
+</p>
+
+<!-- ABOUT THE PROJECT -->
+
+## About The Project
+
+Coding challenge build with HTML and CSS. For the layout CSS grid and flexbox were used.
+
+### Built With
+
+- [HTML](https://www.w3schools.com/html/)
+- [CSS](https://www.w3schools.com/css/)
+
+<!-- CONTACT -->
+
+## Contact
+
+Alex Suarez - [LinkedIn](https://www.linkedin.com/in/alexsuarez9093/) - suarez9093@hotmail.com
+
+<!-- Job details
 Salary
 $30,000 - $42,000 a year
 Job Type
@@ -67,4 +99,4 @@ We are looking for an outstanding Web Developer to be responsible for the coding
    # mglagency.com
 
    Benefit Conditions:
-   Waiting period may apply
+   Waiting period may apply -->
