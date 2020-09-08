@@ -21,7 +21,7 @@
 
     <header class="header main-grid">
       <div class="header-container">
-        <h2 class="nav-brand"><span>Alden</span> Casas</h2>
+        <h2 class="nav-brand"><span>Alden </span> Casas</h2>
         <button aria-label="Open navigation" class="open-nav">&#9776;</button>
 
         <nav class="navigation">
@@ -172,21 +172,24 @@
         <img
           src="./img/agent.png"
           alt="a man in a suit standing next to a wooden wall"
-          class="about-img"
+          class="about-img main-grid"
         />
-        <h2 class="about-title"><span>Alden</span> Casas</h2>
-        <p class="about-subtitle">licensed realtor&reg; (#0.547777777)</p>
-        <p class="about-description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel
-          metus sit amet velit interdum elementum. Morbi vitae lacinia justo.
-          Mauris vitae leo purus. Pellentesque cursus, ipsum dapibus auctor
-          dignissim, ligula lorem lobortis ex, id accumsan massa arcu id augue.
-          Duis vestibulum ipsum ante, nec ullamcorper nisi lacinia non. Ut a
-          quam metus. Donec et nunc in enim tincidunt blandit eget vel augue.
-          Duis sollicitudin magna et metus malesuada, ut dictum ipsum malesuada.
-          Ut libero sem, luctus pulvinar metus id, placerat efficitur lectus.
-        </p>
-        <a href="#" class="btn">contact me</a>
+        <div class="about-text">
+          <h2 class="about-title"><span>Alden</span> Casas</h2>
+          <p class="about-subtitle">licensed realtor&reg; (#0.547777777)</p>
+          <p class="about-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel
+            metus sit amet velit interdum elementum. Morbi vitae lacinia justo.
+            Mauris vitae leo purus. Pellentesque cursus, ipsum dapibus auctor
+            dignissim, ligula lorem lobortis ex, id accumsan massa arcu id
+            augue. Duis vestibulum ipsum ante, nec ullamcorper nisi lacinia non.
+            Ut a quam metus. Donec et nunc in enim tincidunt blandit eget vel
+            augue. Duis sollicitudin magna et metus malesuada, ut dictum ipsum
+            malesuada. Ut libero sem, luctus pulvinar metus id, placerat
+            efficitur lectus.
+          </p>
+          <a href="#" class="btn">contact me</a>
+        </div>
       </div>
     </section>
 
@@ -249,14 +252,13 @@
       </div>
       <!--  -->
 
-      <div class="rec-cards">
-        <div class="rec-card">
-          <img
-            class="rec-card-img"
-            src="./img/purchase.png"
-            alt="a family of four holding keys in front of a house"
-          />
-        </div>
+      <div class="rec-container">
+        <img
+          class="rec-card-img"
+          src="./img/purchase.png"
+          alt="a family of four holding keys in front of a house"
+        />
+
         <div class="rec-card">
           <h2 class="rec-card-title"><span>purchase</span> a home</h2>
           <p class="rec-card-description">
@@ -271,13 +273,6 @@
             ac accumsan tincidunt.
           </p>
           <a href="#" class="btn btn-secondary">get started</a>
-        </div>
-        <div class="rec-card">
-          <img
-            class="rec-card-img"
-            src="./img/purchase.png"
-            alt="a family of four holding keys in front of a house"
-          />
         </div>
         <div class="rec-card">
           <h2 class="rec-card-title"><span>list</span> a home</h2>
@@ -297,6 +292,11 @@
           </p>
           <a href="#" class="btn btn-secondary">get a free home estimate</a>
         </div>
+        <img
+          class="rec-card-img"
+          src="./img/sell.png"
+          alt="a family of four holding keys in front of a house"
+        />
       </div>
     </section>
 
@@ -335,9 +335,12 @@
       <p class="contact-form-subtitle">schedule a free</p>
       <h2 class="contact-form-title">Home Consultation</h2>
       <form class="contact-form" action="#">
-        <input class="contact-input" type="text" placeholder="NAME" />
-        <input class="contact-input" type="email" placeholder="EMAIL" />
-        <input class="contact-input" type="text" placeholder="PHONE" />
+        <div class="contact-input-container">
+          <input class="contact-input" type="text" placeholder="NAME" />
+          <input class="contact-input" type="email" placeholder="EMAIL" />
+          <input class="contact-input" type="text" placeholder="PHONE" />
+          <input class="contact-input" type="text" placeholder="OPTION" />
+        </div>
 
         <textarea
           class="contact-textarea"
@@ -401,9 +404,11 @@
       </div>
 
       <div class="footer-location">
-        <h3 class="footer-location-title">Realty Office</h3>
-
-        <p class="footer-location-address">123 Street city, state 89077</p>
+        <div class="footer-location-heading">
+          <h3 class="footer-location-title">Realty Office</h3>
+          <p class="footer-location-address">123 Street city, state 89077</p>
+          <a href="#">get directions</a>
+        </div>
         <div id="map"></div>
         <!-- Map image -->
       </div>
@@ -413,7 +418,7 @@
     <script src="js/logic.js"></script>
     <script
       defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-2unMtergTyqF5YXxbNmr20dijqhmlnM&callback=initMap"
+      src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"
     ></script>
   </body>
 </html>
